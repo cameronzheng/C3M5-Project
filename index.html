@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Zheng | Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Cameron Zheng, a full-stack developer. Showcasing projects, skills, and contact information.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav aria-label="Main navigation" role="navigation">
+            <!-- Hamburger menu for mobile -->
+            <div class="hamburger" id="hamburger-menu" aria-label="Open navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>This is who i am. I am supposed to write about myself but i won't</p>
+        </section>
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <!-- Filter Buttons -->
+            <div id="project-filters" style="text-align:center; margin-bottom:1.5rem;">
+                <button class="project-filter-btn" data-category="all">All</button>
+                <button class="project-filter-btn" data-category="web">Web</button>
+                <button class="project-filter-btn" data-category="app">App</button>
+            </div>
+            <article data-category="web,app">
+                <h3>Project One</h3>
+                <figure>
+                    <img src="project1-placeholder.png" alt="Screenshot of Project One: A web dashboard interface with charts and tables" width="200">
+                    <figcaption>A brief description of Project One goes here.</figcaption>
+                </figure>
+            </article>
+            <article data-category="app">
+                <h3>Project Two</h3>
+                <figure>
+                    <img src="project2-placeholder.png" alt="Screenshot of Project Two: A mobile app displaying a to-do list with colorful icons" width="200">
+                    <figcaption>A brief description of Project Two goes here.</figcaption>
+                </figure>
+            </article>
+            <article data-category="web">
+                <h3>Project Three</h3>
+                <figure>
+                    <img src="project3-placeholder.png" alt="Screenshot of Project Three: An e-commerce website homepage with product images and navigation menu" width="200">
+                    <figcaption>A brief description of Project Three goes here.</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React.js / Angular / Vue.js</li>
+                <li>Node.js / Express.js</li>
+                <li>Python / Django / Flask</li>
+                <li>Java / Spring Boot</li>
+                <li>SQL / NoSQL Databases (MySQL, MongoDB)</li>
+                <li>Git &amp; GitHub</li>
+                <li>RESTful APIs</li>
+                <li>Unit Testing &amp; Debugging</li>
+                <li>Agile &amp; Scrum Methodologies</li>
+            </ul>
+        </section>
+        <article>
+            <section id="content" role="region" aria-label="Simple Web Page Content" style="text-align: center;">
+                <p>This is a simple web page.</p>
+            </section>
+        </article>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="contact-name">Name:</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
+                <div>
+                    <label for="contact-email">Email:</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+                <div>
+                    <label for="contact-message">Message:</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo"></footer>
+        <p>&copy; 2023 My Web Page</p>
+    </footer>
+</body>
+</html>
